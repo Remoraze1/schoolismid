@@ -30,38 +30,38 @@
             width: 100%;
         }
 
+        #text-display {
+            font-size: 4rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Ensures text contrast */
+            position: absolute;
+            bottom: 40%; /* Adjusts the position of the rotating text */
+            width: 100%; /* Ensure it spans the width */
+        }
+
         .flying-text {
             font-size: 3rem; /* Adjust flying text size */
             color: #ffcc00; /* Flying text color */
             white-space: nowrap; /* Prevent line breaks */
             position: absolute; /* Use absolute positioning */
             animation: fly 10s linear infinite; /* Animation definition */
-            top: 10%; /* Position flying text */
-        }
-
-        #text-display {
-            font-size: 4rem;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Ensures text contrast */
-            position: absolute;
-            bottom: 40%; /* Adjusts the position of the rotating text */
+            top: 60%; /* Position flying text below the changing text */
         }
 
         @keyframes fly {
-            0% { left: -100%; } /* Start off-screen to the left */
-            100% { left: 100%; } /* Move to off-screen to the right */
+            0% { left: 100%; } /* Start off-screen to the right */
+            100% { left: -100%; } /* Move to off-screen to the left */
         }
     </style>
 </head>
 <body>
     <h1>BallsyG</h1> <!-- Main title -->
 
-    <div class="flying-text">BallsyG</div> <!-- Flying text -->
-
     <!-- Rotating text container -->
     <div id="text-display"></div>
+
+    <div class="flying-text">Flying Text Here!</div> <!-- Flying text -->
 
     <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
-
