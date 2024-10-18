@@ -1,9 +1,11 @@
 // Array of texts to display
 const texts = [
-  'Welcome to BallsyG!',
-  'The place to be bold!',
-  'Make your mark here!',
-  'Dare to stand out!'
+  'BallsyG!',
+  'BallstyG for justice!',
+  'A dozen a dime',
+  'ballsyG, the newest concrete type!'
+  'github is unblocked on fortigard i think'
+  'BallsyG is unblocke'
 ];
 
 // Initial index for rotating text
