@@ -13,7 +13,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url('background.jpg') no-repeat center center fixed;
+      background: url('your-image.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
@@ -23,11 +23,28 @@
       font-size: 5rem;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
-      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Adds contrast for better readability */
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Ensures text is readable */
+      position: absolute;
+      top: 20%; /* Moves the title higher up */
+      width: 100%;
+    }
+
+    #text-display {
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Ensures text contrast */
+      position: absolute;
+      bottom: 40%; /* Adjusts the position of the rotating text */
     }
   </style>
 </head>
 <body>
   <h1>BallsyG</h1>
+  
+  <!-- Rotating text container -->
+  <div id="text-display"></div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
+
