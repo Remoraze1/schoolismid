@@ -11,6 +11,7 @@
       font-family: Arial, sans-serif;
       height: 100vh;
       display: flex;
+      flex-direction: column; /* Changed to column to stack elements vertically */
       justify-content: center;
       align-items: center;
       background: url('background.jpg') no-repeat center center fixed;
@@ -24,28 +25,27 @@
       text-transform: uppercase;
       letter-spacing: 0.2rem;
       text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Ensures text is readable */
-      position: absolute;
-      top: 20%; /* Moves the title higher up */
-      width: 100%;
+      position: relative; /* Changed to relative to adjust with flexbox */
+      margin-bottom: 20px; /* Adds space below the title */
     }
 
     #text-display {
       font-size: 4rem;
       text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Ensures text contrast */
-      position: absolute;
-      bottom: 40%; /* Adjusts the position of the rotating text */
+      margin-bottom: 20px; /* Adds space below the rotating text */
     }
   </style>
 </head>
 <body>
   <h1>BallsyG</h1>
-  <script type="text/javascript" src="//counter.websiteout.com/js/24/0/0/0"></script>
+  
   <!-- Rotating text container -->
   <div id="text-display"></div>
 
   <!-- Link to the external JavaScript file -->
   <script src="script.js"></script>
+
+  <!-- Site counter script -->
+  <script type="text/javascript" src="//counter.websiteout.com/js/24/0/0/0"></script>
 </body>
 </html>
-
-
