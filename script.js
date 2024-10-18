@@ -1,11 +1,11 @@
 // Array of texts to display
 const texts = [
   'BallsyG!',
-  'BallstyG for justice!',
+  'BallsyG for justice!',
   'A dozen a dime',
-  'ballsyG, the newest concrete type!'
-  'github is unblocked on fortigard i think'
-  'BallsyG is unblocke'
+  'BallsyG, the newest concrete type!',
+  'GitHub is unblocked on FortiGuard, I think!',
+  'BallsyG is unblocked!'
 ];
 
 // Initial index for rotating text
@@ -20,3 +20,4 @@ function changeText() {
 // Call the function every 10 seconds
 changeText(); // Initial call to show the first text immediately
 setInterval(changeText, 10000); // Change every 10,000 milliseconds (10 seconds)
+
